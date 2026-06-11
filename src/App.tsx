@@ -22,7 +22,7 @@ export default function App() {
   const [view, setView] = useState<ActiveView>('grandes_entreprises');
 
   const {
-    statuses, notes, updateStatus, updateNote,
+    statuses, notes, loaded, updateStatus, updateNote,
     todayCount, streakCount,
     totalContacted, totalResponses, totalRdv, totalPartenariats,
   } = useContacts();
@@ -41,6 +41,16 @@ export default function App() {
   function handleStatusChange(id: string, s: ContactStatus) {
     updateStatus(id, s);
   }
+
+  if (!loaded) return (
+    <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', background: '#0A0A0A', flexDirection: 'column', gap: 16 }}>
+      <div className="font-display" style={{ fontSize: 40, color: '#CCFF00' }}>PÜR<span style={{ color: '#F5F5F5' }}>INSTINCT</span></div>
+      <div style={{ color: '#4B5563', fontSize: 14 }}>Connexion au cloud…</div>
+      <div style={{ width: 120, height: 3, background: '#1F1F1F', borderRadius: 2, overflow: 'hidden' }}>
+        <div style={{ height: '100%', width: '60%', background: '#CCFF00', borderRadius: 2, animation: 'slot-spin 1s ease-in-out infinite' }} />
+      </div>
+    </div>
+  );
 
   return (
     <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: '#0A0A0A' }}>
