@@ -23,7 +23,8 @@ const EDUCATION_ITEMS: NavItem[] = [
 const DASHBOARD_ITEMS: NavItem[] = [
   { icon: '📊', label: 'Mes Stats', view: 'stats' },
   { icon: '🏆', label: 'Mes Badges', view: 'badges' },
-  { icon: '👥', label: 'Réseau LinkedIn', view: 'linkedin' },
+  { icon: '👥', label: 'Import LinkedIn', view: 'linkedin' },
+  { icon: '🌐', label: '300 Contacts Réseau', view: 'linkedin_network' },
 ];
 
 interface Props {

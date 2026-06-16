@@ -81,4 +81,5 @@ export type ActiveView =
   | 'ecoles_privees'
   | 'stats'
   | 'badges'
-  | 'linkedin';
+  | 'linkedin'
+  | 'linkedin_network';

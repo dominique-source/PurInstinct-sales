@@ -8,6 +8,7 @@ import { RandomPicker } from './components/modules/RandomPicker';
 import { StatsPage } from './components/modules/StatsPage';
 import { BadgeSystem } from './components/ui/BadgeSystem';
 import { LinkedInImport } from './components/modules/LinkedInImport';
+import { LinkedInNetworkModule } from './components/modules/LinkedInNetworkModule';
 import { useContacts } from './hooks/useContacts';
 import { useBadges } from './hooks/useBadges';
 import { grandesEntreprises } from './data/grandes-entreprises';
@@ -106,6 +107,9 @@ export default function App() {
           )}
           {view === 'linkedin' && (
             <LinkedInImport />
+          )}
+          {view === 'linkedin_network' && (
+            <LinkedInNetworkModule />
           )}
         </div>
       </div>

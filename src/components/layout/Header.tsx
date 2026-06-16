@@ -12,7 +12,8 @@ const VIEW_TITLES: Record<ActiveView, string> = {
   ecoles_privees: '🏫 Écoles Privées (FEEP)',
   stats: '📊 Mes Stats',
   badges: '🏆 Mes Badges',
-  linkedin: '👥 Réseau LinkedIn',
+  linkedin: '👥 Import LinkedIn',
+  linkedin_network: '🌐 300 Contacts Stratégiques — Réseau LinkedIn',
 };
 
 interface Props {
