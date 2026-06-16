@@ -46,7 +46,7 @@ export function SchoolCard({ school, status, note, onStatusChange, onNoteChange 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', marginBottom: 4 }}>
-            <span className="font-display" style={{ fontSize: 16, color: '#F5F5F5' }}>{school.nom}</span>
+            <span style={{ fontSize: 16, fontWeight: 700, color: '#F5F5F5', letterSpacing: '-0.2px' }}>{school.nom}</span>
             {school.priorite === 1 && <span style={{ fontSize: 10, background: '#CCFF00', color: '#0A0A0A', padding: '1px 6px', borderRadius: 4, fontWeight: 700 }}>⭐</span>}
           </div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -60,7 +60,7 @@ export function SchoolCard({ school, status, note, onStatusChange, onNoteChange 
       </div>
 
       {school.contact_responsable && (
-        <div style={{ fontSize: 12, color: '#6B7280', marginBottom: 6 }}>👤 {school.contact_responsable}</div>
+        <div style={{ fontSize: 14, fontWeight: 600, color: '#D1D5DB', marginBottom: 6 }}>👤 {school.contact_responsable}</div>
       )}
 
       <div style={{ display: 'flex', gap: 12, marginBottom: 8, flexWrap: 'wrap' }}>

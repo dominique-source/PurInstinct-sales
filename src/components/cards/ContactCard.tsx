@@ -49,7 +49,7 @@ export function ContactCard({ contact, status, note, onStatusChange, onNoteChang
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <span className="font-display" style={{ fontSize: 17, color: '#F5F5F5' }}>{contact.nom_entreprise}</span>
+            <span style={{ fontSize: 16, fontWeight: 700, color: '#F5F5F5', letterSpacing: '-0.2px' }}>{contact.nom_entreprise}</span>
             {contact.priorite === 1 && <span style={{ fontSize: 10, background: '#CCFF00', color: '#0A0A0A', padding: '1px 6px', borderRadius: 4, fontWeight: 700 }}>⭐ PRIORITÉ</span>}
             {contact.linkedin_reseau && <span style={{ fontSize: 10, background: '#1D4ED8', color: '#93C5FD', padding: '1px 6px', borderRadius: 4, fontWeight: 700 }}>LinkedIn</span>}
           </div>
@@ -67,7 +67,7 @@ export function ContactCard({ contact, status, note, onStatusChange, onNoteChang
 
       {/* Contact info */}
       {contact.contact_rh && (
-        <div style={{ fontSize: 12, color: '#6B7280', marginBottom: 6 }}>
+        <div style={{ fontSize: 14, fontWeight: 600, color: '#D1D5DB', marginBottom: 6 }}>
           👤 {contact.contact_rh}
         </div>
       )}

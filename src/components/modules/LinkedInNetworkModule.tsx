@@ -47,13 +47,13 @@ function ContactRow({ contact, status, note, onStatus, onNote }: {
         {/* Name + info */}
         <div style={{ flex: '1 1 200px', minWidth: 0 }}>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', marginBottom: 3 }}>
-            <span className="font-display" style={{ fontSize: 16, color: '#F5F5F5' }}>
+            <span style={{ fontSize: 16, fontWeight: 700, color: '#F5F5F5', letterSpacing: '-0.2px' }}>
               {contact.prenom} {contact.nom}
             </span>
             {contact.priorite === 1 && <span style={{ fontSize: 10, background: '#CCFF00', color: '#0A0A0A', padding: '1px 6px', borderRadius: 4, fontWeight: 700 }}>⭐ TOP</span>}
           </div>
-          <div style={{ fontSize: 12, color: '#9CA3AF', marginBottom: 2 }}>{contact.poste}</div>
-          <div style={{ fontSize: 12, color: '#6B7280', fontWeight: 600 }}>{contact.entreprise}</div>
+          <div style={{ fontSize: 13, color: '#D1D5DB', marginBottom: 2 }}>{contact.poste}</div>
+          <div style={{ fontSize: 13, color: '#9CA3AF', fontWeight: 600 }}>{contact.entreprise}</div>
         </div>
 
         {/* Note stratégique */}
